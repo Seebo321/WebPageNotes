@@ -93,3 +93,13 @@ if (letterCount >= 1){
       body.innerHTML = ('<p>the letter '+ letter + ' is not here . </p>')
    } 
    
+  //  more array notes
+
+  let mountains =[10002, 25000,320, 51648,7842,100021, 540]
+let largest = Math.max.apply(Math, mountains);
+console.log(largest)
+let smallest = Math.min.apply(Math, mountains);
+console.log(smallest)
+
+// Math.max.apply(Math, mountains) saying look for the largest number in the moutainsarray
+// .min.apply is looking for smallest number in array
