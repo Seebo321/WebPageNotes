@@ -109,7 +109,7 @@ console.log(smallest)
 
 */
 const body = document.querySelector("body");
-const redundantArray = [1, 1, 2, 3, 3, 4]
+const redundantArray = [1, 1, 2, 3, 3, 4,'apple','apple','banna']
 // ^starting array with duplicates
 const array = Array.from(new Set(redundantArray));
 // creating new array minus duplicates^
