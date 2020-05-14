@@ -102,4 +102,18 @@ let smallest = Math.min.apply(Math, mountains);
 console.log(smallest)
 
 // Math.max.apply(Math, mountains) saying look for the largest number in the moutainsarray
-// .min.apply is looking for smallest number in array
+// .min.apply is looking for smallest number in array (no affect on strings)
+
+// more array, this time get rid of duplicates
+
+
+*/
+const body = document.querySelector("body");
+const redundantArray = [1, 1, 2, 3, 3, 4]
+// ^starting array with duplicates
+const array = Array.from(new Set(redundantArray));
+// creating new array minus duplicates^
+
+console.log(array)
+body.innerHTML = '<p>this is stupid ' + redundantArray
++ ' but this is better ' + array + ' </p> ' ;
