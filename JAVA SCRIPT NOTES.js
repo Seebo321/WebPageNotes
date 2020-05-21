@@ -117,3 +117,23 @@ const array = Array.from(new Set(redundantArray));
 console.log(array)
 body.innerHTML = '<p>this is stupid ' + redundantArray
 + ' but this is better ' + array + ' </p> ' ;
+
+
+
+// .reduce ab takes the numbers within the array and adds them together 0 is starting value
+totalAmount= (
+   diceRolls.reduce((a, b) => a + b, 0));
+
+
+// for loops and while loops
+
+i=0;
+while(i<10){
+   console.log(i)
+   i++
+}
+// for, first code runs once, second is determing, last code runs at end of list in this 
+// example ends after console.log(i)
+for(i=0;i<10; i++){
+   console.log(i)
+}
