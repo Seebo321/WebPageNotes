@@ -147,3 +147,13 @@ function name(variable){
 function containsVowel(x){
    return['a','e','i','o','u'].indexOf(x.toLowerCase()) !==-1
 }
+// function to round to nearest dollar and then round up for tip
+function tip(x){
+   y=Math.round(x)
+   z=y*.2
+   return Math.ceil(z)
+}
+console.log('kata 6:', tip(20)
+)
+console.log('kata 6:', tip(57))
+console.log('kata 6:', tip(32))
