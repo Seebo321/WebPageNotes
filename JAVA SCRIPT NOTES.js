@@ -137,3 +137,13 @@ while(i<10){
 for(i=0;i<10; i++){
    console.log(i)
 }
+
+// functions
+
+function name(variable){
+   return variable+variable
+}
+// function to return if vowel
+function containsVowel(x){
+   return['a','e','i','o','u'].indexOf(x.toLowerCase()) !==-1
+}
