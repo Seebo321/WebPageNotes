@@ -157,3 +157,10 @@ console.log('kata 6:', tip(20)
 )
 console.log('kata 6:', tip(57))
 console.log('kata 6:', tip(32))
+
+// making a function to input things into html
+// X would be the html item ex h2,div,li,ect
+// y would be the stuff between it >hello world<
+function html(x,y){
+   return '<'+ x +'>' + y + "</" + x +'>'
+}
