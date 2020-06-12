@@ -229,3 +229,12 @@ function pattern(n){
   console.log(pattern(1))
 
   console.log(pattern(4))
+
+// type of returns 'number' if number ! states not this
+  function myFirstKata(a, b) {
+   if (typeof a !== 'number'|| typeof b !== 'number') {
+ return false ;
+   } else {
+     return a % b + b % a;   
+   }
+ }
