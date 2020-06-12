@@ -179,3 +179,53 @@ console.log(createsurprise('you are great!'))
 // arrow function aswell with only 1 var
 // can all be one line like so all are the same as top function
  let arrowcreatesurprise = string => string + ' Boo!'
+
+ function findShort(string){
+let newArray=string.split(' ')
+let result= 0
+let shortestword=100
+for(index= 0;index<newArray.length;index+=1){
+ let currentWord=newArray[index]
+  let currentwordlength=currentWord.length
+// console.log(newArray[index].length)
+if(currentwordlength<shortestword){
+ 
+   // console.log(num)
+shortestword=currentwordlength}else{}
+
+}
+
+return shortestword}
+
+console.log(findShort('hello world i am here'))
+function removeDuplicateWords (string) {
+   let orignialArray=string.split(' ')
+   let newArray=[]
+   for(let index=0;index<orignialArray.length;index+=1){
+     let word= orignialArray[index]
+     if(newArray.includes(word)) {}
+     else{console.log(hello)
+   }
+   }}
+function pattern(n){
+   var output="";
+   let array=[]
+   if(n<1){}else{
+       for(let index=1;index<=n;index+=1){
+       console.log(index)
+         for(let i=0;i<index;i++)
+         { array.push(index) 
+           }array.push('\n')
+       
+       }array.pop()
+       output=output+array.join('')
+   console.log(array)
+  
+   }
+   
+     // Happy Coding ^_^
+   return output;
+  }
+  console.log(pattern(1))
+
+  console.log(pattern(4))
