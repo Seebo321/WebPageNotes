@@ -164,3 +164,18 @@ console.log('kata 6:', tip(32))
 function html(x,y){
    return '<'+ x +'>' + y + "</" + x +'>'
 }
+// arrow function
+
+function createsurprise(string){
+   result=(string + ' Boo!')
+return result
+}
+console.log(createsurprise('you are great!'))
+// below arrow function
+ const arrowcreatesurprise = (string)=>{
+    return (string + ' Boo!')
+ 
+ }
+// arrow function aswell with only 1 var
+// can all be one line like so all are the same as top function
+ let arrowcreatesurprise = string => string + ' Boo!'
