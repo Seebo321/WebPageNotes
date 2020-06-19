@@ -238,3 +238,5 @@ function pattern(n){
      return a % b + b % a;   
    }
  }
+
+ 
