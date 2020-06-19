@@ -252,3 +252,12 @@ kata18heading.append('Kata 18')
 let h1header=document.querySelector('h1')
 // removing h1's in document
 h1header.remove()
+
+// function i created to add elements to browser
+function addElement(tag,input,classname,idname){
+   let tagout=document.createElement(tag)
+   tagout.id=idname
+   tagout.className=classname
+   mainElement.append(tagout)
+   tagout.append(input)
+}
