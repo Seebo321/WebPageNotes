@@ -239,4 +239,16 @@ function pattern(n){
    }
  }
 
- 
+//  adding things to html via javascript
+// creating a h2 tag
+const kata18heading=document.createElement('h2')
+// adding tag to page(labled a section in html with class and identified it here as mainElement)
+mainElement.append(kata18heading)
+// adding kata 18 to the h2 tag in the document
+kata18heading.append('Kata 18')
+
+// removeing things using javascript
+// labeling h1's in page
+let h1header=document.querySelector('h1')
+// removing h1's in document
+h1header.remove()
