@@ -261,3 +261,44 @@ function addElement(tag,input,classname,idname){
    mainElement.append(tagout)
    tagout.append(input)
 }
+// change output code CHANGE is obj with numbers for change
+// Remember you have a CHANGE dictionary to work with ;)
+
+function changeCount( change ){
+
+   let spare=change.split(' ')
+   let result=0
+   for(let i=0;i<spare.length;i++){
+   let current=spare[i]
+   result= result+CHANGE[current]
+   }
+   return '$'+result.toFixed(2)
+   }
+   Test.assertEquals(changeCount('dime penny dollar'), '$1.11')
+   // .tofixed(2) makes number show past decimal 2 spaces
+   // CHANGE[current] would pick the current word in the obj
+   // in this case it will show dime
+
+   // console.assert alerts a false output in 
+   // console
+let assertX=false
+   console.assert(assertX)
+
+
+   // methods like foreach,filter, ect ect
+
+   const sampleArray = [
+      469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 
+      456, 21, 398, 339, 882, 848, 179, 535, 940, 472,
+  ]
+  
+  sampleArray.forEach(element => {
+      console.log(element)
+  });
+  sampleArray.forEach(item =>console.log("item:",item))
+  // shows  filter, and for each loop
+  // arrow function use as well
+//   filter below pulls only even, then for each consolelogs that
+  sampleArray.filter(number=>number%2=== 0).forEach(number=>console.log("number: "+number+' even'))
+  
+  
