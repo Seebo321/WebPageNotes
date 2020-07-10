@@ -300,5 +300,43 @@ let assertX=false
   // arrow function use as well
 //   filter below pulls only even, then for each consolelogs that
   sampleArray.filter(number=>number%2=== 0).forEach(number=>console.log("number: "+number+' even'))
-  
-  
+  .reverse()
+// to go backwards in array^...changed entire array backwards
+
+// map gives new array
+let sampleArray2=sampleArray.map(number => number * number)
+console.log('lets see this   '+ sampleArray2)
+let user={
+   icecream:['vannila', 'mint', 'choc'],
+   food:['icecream','pizza']
+}
+
+let icecreamm=user.icecream.find(containsVowel)
+
+  console.log(icecreamm)
+
+
+
+//   class construction javascript
+// constructor is variable given to class here shows chosing color
+// can have multple ones
+
+// showin the on state is fasle
+class Lamp {
+   constructor(Color) {
+this.color=Color
+     this.on= false 
+   }
+
+// toggle on off function for specific lamp
+toggleSwitch(){
+ if(this.on===false){this.on=true}else{this.on=false}
+}
+// function to tell us if on or off
+ state(){
+   if(this.on===false){return "The lamp is off."}else{
+     return  'The lamp is on.'
+   }
+         }
+      
+}
