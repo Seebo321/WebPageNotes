@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+            class Vodka extends React.Component {
+            render () {
+                return (
+                    <div>
+                    <h1>
+                        Heres the vodka,<em> {this.props.name}!</em>
+                    </h1>
+                    <img src={this.props.ImgSource} alt="" srcset=""/>
+                    <a href={this.props.Source}>{this.props.name}</a>
+                    </div>
+                )
+            }
+        }
+    ReactDOM.render(<div>
+    <h1>Hi!</h1>
+    <Vodka name="Sky" Source="https://www.skyy.com/" ImgSource="https://www.skyy.com/wp-content/uploads/2015/12/agegate_bottle-1.png"/>
+    
+    </div>, document.getElementById('root'));
+    </script>
+
+<!-- functions are stateless and basic -->
+<!-- classes ahve a state and are smart -->
+<!-- Make sure camel case ex:HelloHeader -->
+<!-- to call function in render use function like above <Vodka/> then change properties make sure capitalize -->
+<!-- to use this.name in vodka use {} not "" -->
+<!-- make sure everything has closing /> like <h1></h1> or <img/> -->
+<!-- to have mutliple things in render use parent elemetn like <div> -->
+<!-- basic element structure const element = React.createElement("h1", null, "Hello, React!") -->
+<!-- html aspect,source? i think, properties like string -->
+
+
+
+
+</body>
+</html>
